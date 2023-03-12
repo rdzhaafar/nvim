@@ -10,3 +10,6 @@ vim.opt.rnu = true
 
 vim.opt.wrap = false
 
+vim.opt.listchars = { trail = "*" }
+vim.opt.list = true
+
