@@ -10,11 +10,12 @@ I'm tired of both VSCode and Emacs.
 - - [ ] Go
 - - [ ] Lua
 - [ ] Add a nice color theme
-- [ ] Add treesitter parsers
-- - [ ] Python
-- - [ ] Rust
+- [x] Add treesitter parsers
+- - [x] Python
+- - [x] Rust
 - - [ ] Go
-- - [ ] Lua
+- - [x] Lua
 - - [ ] Unix shell
-- [ ] Render trailing whitespace and leading tabs
+- [x] Render trailing whitespace and leading tabs
+- Add an fzf-type plugin for easier buffer switching
 
