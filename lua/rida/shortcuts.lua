@@ -7,3 +7,5 @@ vim.keymap.set("n", "<leader>cv", "\"*p")
 
 vim.keymap.set("n", "<leader>b", ":ls<CR>:b ")
 
+vim.keymap.set("n", "<leader>/", ":noh<CR>")
+
