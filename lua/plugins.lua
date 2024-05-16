@@ -2,12 +2,24 @@
 -- lazy.nvim packages
 --
 require('lazy').setup({
-	{ 'nvim-telescope/telescope.nvim',   tag = '0.1.6', dependencies = { 'nvim-lua/plenary.nvim' } },
+	{ 'nvim-telescope/telescope.nvim',   tag = '0.1.6',  dependencies = { 'nvim-lua/plenary.nvim' } },
 	{ 'lewis6991/gitsigns.nvim',         tag = 'v0.8.1' },
 	{ 'ellisonleao/gruvbox.nvim',        tag = '2.0.0' },
 	{ 'neovim/nvim-lspconfig',           tag = 'v0.1.7' },
 	{ 'nvim-treesitter/nvim-treesitter', tag = 'v0.9.2' },
+	{ 'VonHeikemen/lsp-zero.nvim',       branch = 'v3.x' },
+	{ 'L3MON4D3/LuaSnip',                tag = 'v2.3.0' },
+	{ 'hrsh7th/cmp-nvim-lsp' },
+	{ 'hrsh7th/nvim-cmp' },
 })
+
+--
+-- lsp-zero
+--
+local lsp_zero = require('lsp-zero')
+lsp_zero.on_attach(function(_, bufnr)
+	lsp_zero.default_keymaps({ buffer = bufnr })
+end)
 
 --
 -- LSP
